@@ -1,0 +1,63 @@
+@charset "UTF-8";
+
+/* CSS Document */
+/*初始化*/
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+fieldset,
+input,
+textarea,
+p,
+blockquote,
+th,
+td,
+video,
+hr {
+    margin: 0;
+    padding: 0;
+    font: "微软雅黑";
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: normal;
+}
+
+ul {
+    list-style: none;
+}
+
+a,
+u {
+    text-decoration: none;
+}
+
+input {
+    outline: none;
+}
+
+i {
+    font-style: normal;
+}
+
+img {
+    display: block;
+}
