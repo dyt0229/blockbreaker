@@ -9,3 +9,40 @@ html,body{
     background: #000;
     /* background-image: url('../imgs/bg.png'); */
 }
+#bgArea{
+    position: fixed;
+    width: 580px;
+    height: 836px;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin:auto;
+}
+#logoImg{
+    width: 400px;
+    display: block;
+    position: fixed;
+    top:20px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+button{
+    width: 150px;
+    height: 40px;
+    display: block;
+    outline: none;
+    /* border: none; */
+}
+#start{
+    position: fixed;
+    top:500px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    border-radius: 5px;
+    background: -webkit-linear-gradient(135deg, #1de9b6 0%, #1dc4e9 100%);
+    background:-moz-linear-gradient(135deg, #1de9b6 0%, #1dc4e9 100%);
+    background: linear-gradient(-45deg, #1de9b6 0%, #1dc4e9 100%);
+}
