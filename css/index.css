@@ -6,7 +6,7 @@ html,body{
 .body-box{
     width: 100%;
     height: 100%;
-    background: #000;
+    background: #111111;
     /* background-image: url('../imgs/bg.png'); */
 }
 #bgArea{

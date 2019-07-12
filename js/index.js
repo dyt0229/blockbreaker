@@ -39,11 +39,23 @@ function hide(){
 // let end_month = temp_end_month
 // console.log(end_year + '-' + end_month + '-' + end_date)
 $("#start").onclick = function() {
-    hide();
-    let m = new Map({
-        width:580,
-        height:836,
-        bgImg:"imgs/bg1.jpg"
+    let p = new Progress({
+        width: 580,
+        borderRadius: 10,
+        bgColor:"#000",
+        timeSpace: 20,
     })
-    m.creatUI();
+    p.createUI();
+    p.run();
+    // hide();
+    // setTimeout(() => {
+    //     hide();
+    // }, 1000);
+    
+    // let m = new Map({
+    //     width:580,
+    //     height:836,
+    //     bgImg:"imgs/bg1.jpg"
+    // })
+    // m.creatUI();
 }
