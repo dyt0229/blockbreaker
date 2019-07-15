@@ -1,15 +1,9 @@
 html,body{
     width: 100%;
     height: 100%;
-    /* position: relative; */
-}
-.body-box{
-    width: 100%;
-    height: 100%;
     background: #111111;
-    /* background-image: url('../imgs/bg.png'); */
 }
-#bgArea{
+#box{
     position: fixed;
     width: 580px;
     height: 836px;
@@ -18,6 +12,14 @@ html,body{
     right: 0;
     bottom: 0;
     margin:auto;
+}
+#bgArea{
+    position: absolute;
+    width: 580px;
+    height: 836px;
+    top:0;
+    left: 0;
+    overflow: hidden;
 }
 #logoImg{
     width: 400px;

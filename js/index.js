@@ -47,15 +47,27 @@ $("#start").onclick = function() {
     })
     p.createUI();
     p.run();
-    // hide();
-    // setTimeout(() => {
-    //     hide();
-    // }, 1000);
+    setTimeout(() => {
+        hide();
+        //新建一个地图
+        let m = new Map({
+            width:580,
+            height:836,
+            bgImg:"imgs/bg1.jpg"
+        })
+        //初始化地图界面
+        //新建一个球拍
+        let bat = new Bat({
+            map:m,
+            width:70,
+            height:17,
+            left:(m.width-100)/2,
+            top:m.height-20,
+            bgImg:"../imgs/bat.png",
+        })
+        bat.addEvent();
+        bat.shoot();
+    }, 2500);
     
-    // let m = new Map({
-    //     width:580,
-    //     height:836,
-    //     bgImg:"imgs/bg1.jpg"
-    // })
-    // m.creatUI();
+    
 }

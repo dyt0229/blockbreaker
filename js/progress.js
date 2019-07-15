@@ -28,7 +28,7 @@ function Progress(obj) {
 
 Progress.prototype.createUI = function() {
     this.domObj = document.createElement("div");
-    this.domObj.style.cssText = "position:absolute; top:500px; left:0;";
+    this.domObj.style.cssText = "position:fixed; top:600px; left:0; right:0; margin:auto;";
     this.domObj.style.width = this.width + "px";
     this.domObj.style.height = this.height + "px";
     this.domObj.style.backgroundColor = this.bgColor;
@@ -52,6 +52,8 @@ Progress.prototype.run = function(){
         step += this.incLen;
         if(step>=this.width){
             step = this.width;
+            this.domObj.style.cssText = "display:none;"
+            this.domObj.remove();
         }
         this.innerBox.style.width = step + 'px';
     }, this.timeSpace);
